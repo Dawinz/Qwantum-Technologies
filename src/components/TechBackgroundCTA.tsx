@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 // Tech logos data with positioning and animation variations
 const techLogos = [
@@ -92,9 +93,13 @@ export default function TechBackgroundCTA() {
               }}
             >
               <div className="w-full h-full flex items-center justify-center bg-white rounded-lg shadow-sm p-2">
-                <span className="text-xs font-semibold text-gray-600 text-center leading-tight">
-                  {logo.name}
-                </span>
+                <Image
+                  src={logo.src}
+                  alt={logo.name}
+                  width={48}
+                  height={48}
+                  className="w-full h-full object-contain"
+                />
               </div>
             </motion.div>
           );
