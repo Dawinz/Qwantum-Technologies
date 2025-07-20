@@ -71,7 +71,7 @@ export default function TechBackgroundCTA() {
           return (
             <motion.div
               key={logo.name}
-              className="absolute w-16 h-16 md:w-20 md:h-20 opacity-20 md:opacity-30"
+              className="absolute w-20 h-20 md:w-24 md:h-24 opacity-40 md:opacity-50"
               style={{
                 top: position.top,
                 left: position.left,
@@ -79,7 +79,7 @@ export default function TechBackgroundCTA() {
               }}
               initial={{ opacity: 0, scale: 0 }}
               animate={{ 
-                opacity: [0.2, 0.3, 0.2],
+                opacity: [0.4, 0.6, 0.4],
                 scale: [position.scale, position.scale * 1.1, position.scale],
                 rotate: [position.rotation, position.rotation + 5, position.rotation],
                 y: [0, -10, 0],
@@ -92,7 +92,7 @@ export default function TechBackgroundCTA() {
                 ease: "easeInOut",
               }}
             >
-              <div className="w-full h-full flex items-center justify-center bg-white rounded-lg shadow-sm p-2">
+              <div className="w-full h-full flex items-center justify-center bg-white rounded-lg shadow-md p-2 border border-gray-100">
                 <Image
                   src={logo.src}
                   alt={logo.name}
