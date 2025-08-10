@@ -1,6 +1,7 @@
 "use client";
 import Layout from '../../components/Layout';
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Globe, Smartphone, Palette, TrendingUp, Settings, FileText, Code, ShoppingCart } from "lucide-react";
 
 const services = [
@@ -61,6 +62,23 @@ export default function ServicesPage() {
       <section className="relative py-20 bg-gradient-to-br from-blue-600 to-purple-700 overflow-hidden">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative max-w-7xl mx-auto px-4">
+          {/* Logo */}
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Image
+              src="/images/logo-white.svg"
+              alt="QwantumTech"
+              width={600}
+              height={200}
+              className="mx-auto h-40 w-auto"
+              priority
+            />
+          </motion.div>
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}

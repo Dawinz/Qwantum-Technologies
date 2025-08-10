@@ -1,6 +1,7 @@
 "use client";
 import Layout from '../../components/Layout';
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutPage() {
   return (
@@ -14,6 +15,22 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
+            {/* Logo */}
+            <motion.div
+              className="mb-12"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              <Image
+                src="/images/logo.svg"
+                alt="QwantumTech"
+                width={600}
+                height={200}
+                className="mx-auto h-48 w-auto"
+              />
+            </motion.div>
+            
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
               About QwantumTech
             </h1>

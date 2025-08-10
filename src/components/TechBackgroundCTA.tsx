@@ -126,12 +126,30 @@ export default function TechBackgroundCTA() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
         >
+          {/* Big Logo */}
+          <motion.div
+            className="mb-16"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/images/logo.svg"
+              alt="QwantumTech"
+              width={800}
+              height={267}
+              className="mx-auto h-64 w-auto"
+              priority
+            />
+          </motion.div>
+
           {/* Professional Badge */}
           <motion.div
             className="mb-8"
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">

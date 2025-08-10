@@ -1,5 +1,7 @@
+"use client";
 import Link from "next/link";
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
+import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -60,17 +62,20 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="bg-gray-100 border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           
           {/* Column 1: Logo & Description */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Q</span>
-              </div>
-              <span className="font-bold text-xl text-gray-900">QwantumTech</span>
+              <Image
+                src="/images/logo.svg"
+                alt="QwantumTech"
+                width={300}
+                height={100}
+                className="h-20 w-auto"
+              />
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
               We build fast, scalable websites, apps, and custom digital solutions that help businesses grow and succeed in the digital world.
@@ -78,7 +83,7 @@ export default function Footer() {
           </div>
 
           {/* Column 2: Quick Links */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h3 className="font-semibold text-gray-900 text-lg">Quick Links</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
@@ -95,9 +100,9 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Contact Info */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h3 className="font-semibold text-gray-900 text-lg">Contact</h3>
-            <div className="space-y-3">
+            <div className="space-y-2">
               {contactInfo.map((info) => {
                 const IconComponent = info.icon;
                 return (
@@ -118,7 +123,7 @@ export default function Footer() {
           </div>
 
           {/* Column 4: Social Media */}
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h3 className="font-semibold text-gray-900 text-lg">Follow Us</h3>
             <div className="flex space-x-4">
               {socialLinks.map((social) => {
@@ -139,7 +144,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright Line */}
-        <div className="border-t border-gray-200 mt-8 pt-8">
+        <div className="border-t border-gray-200 mt-6 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-600 text-sm">
               © {new Date().getFullYear()} Qwantum Technologies. All rights reserved.
