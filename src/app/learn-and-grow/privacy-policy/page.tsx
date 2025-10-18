@@ -2,7 +2,7 @@
 import Layout from '../../../components/Layout';
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Shield, Eye, Lock, FileText, Users, Globe, Mail, Bell, Database, AlertCircle, BookOpen, Smartphone, Cloud, BarChart } from "lucide-react";
+import { Shield, Eye, Lock, FileText, Users, Globe, Mail, Bell, Database, AlertCircle, BookOpen, Smartphone, BarChart } from "lucide-react";
 
 export default function LearnAndGrowPrivacyPolicyPage() {
   return (
@@ -86,7 +86,7 @@ export default function LearnAndGrowPrivacyPolicyPage() {
                 <h2 className="text-3xl font-bold text-gray-900 m-0">Introduction</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Welcome to Learn & Grow ("we," "our," or "us"). We are committed to protecting your privacy and ensuring transparency about how we collect, use, and safeguard your personal information. This Privacy Policy explains our practices regarding data collection and usage when you use our Learn & Grow mobile application (the "App").
+                Welcome to Learn & Grow (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). We are committed to protecting your privacy and ensuring transparency about how we collect, use, and safeguard your personal information. This Privacy Policy explains our practices regarding data collection and usage when you use our Learn & Grow mobile application (the &ldquo;App&rdquo;).
               </p>
               <p className="text-gray-700 leading-relaxed">
                 By downloading, installing, or using the Learn & Grow App, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with our policies and practices, please do not use the App.
@@ -196,7 +196,7 @@ export default function LearnAndGrowPrivacyPolicyPage() {
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">Google AdMob</h4>
                   <p className="text-gray-700 mb-3">Our App displays advertisements through Google AdMob. AdMob may collect:</p>
                   <ul className="list-disc list-inside text-gray-700 space-y-1 ml-4 mb-4">
-                    <li>Advertising ID: Your device's advertising identifier</li>
+                    <li>Advertising ID: Your device&apos;s advertising identifier</li>
                     <li>Ad Interaction Data: Ads viewed, ads clicked, ad engagement metrics</li>
                     <li>Device Information: For ad targeting and personalization</li>
                     <li>Location Data: Approximate location (if permitted) for geo-targeted ads</li>
@@ -486,7 +486,7 @@ export default function LearnAndGrowPrivacyPolicyPage() {
             >
               <div className="flex items-center mb-6">
                 <Users className="w-8 h-8 text-blue-600 mr-3" />
-                <h2 className="text-3xl font-bold text-gray-900 m-0">7. Children's Privacy</h2>
+                <h2 className="text-3xl font-bold text-gray-900 m-0">7. Children&apos;s Privacy</h2>
               </div>
 
               <div className="bg-red-50 rounded-lg p-6 border-l-4 border-red-600">
@@ -581,7 +581,7 @@ export default function LearnAndGrowPrivacyPolicyPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3">15.2 Notification of Changes</h3>
                 <p className="text-gray-700 mb-3">When we make changes:</p>
                 <ul className="list-disc list-inside text-gray-700 space-y-2 ml-4 mb-6">
-                  <li>The "Last Updated" date at the top will be revised</li>
+                  <li>The &ldquo;Last Updated&rdquo; date at the top will be revised</li>
                   <li>Material changes will be notified via in-app notifications and email</li>
                   <li>You will have time to review changes before they take effect</li>
                 </ul>
